@@ -10,16 +10,17 @@ function generateAndSaveImage(text, backgroundColor, padding) {
   const paddedWidth = fixedWidth + 2 * padding;
   const paddedHeight = minHeight + 2 * padding;
 
-  // Register font
-  registerFont("EduNSWACTFoundation-Medium.ttf", {
-    family: "Edu NSW ACT Foundation Medium",
-  });
+  // Path to your custom font file
+  const fontPath = "Lexend-Medium.ttf";
+
+  // Register the custom font
+  registerFont(fontPath, { family: "Lexend Medium" });
 
   // Create a canvas
   const canvas = createCanvas(paddedWidth, paddedHeight);
   const ctx = canvas.getContext("2d");
 
-  ctx.font = '12px "Edu NSW ACT Foundation Medium"';
+  ctx.font = '12px "Lexend Medium"';
 
   // Set background color
   ctx.fillStyle = backgroundColor;
