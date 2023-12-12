@@ -10,7 +10,7 @@ function generateAndSaveImage(text, backgroundColor, padding) {
   const paddedWidth = fixedWidth + 2 * padding;
   const paddedHeight = minHeight + 2 * padding;
 
-  // Path to your custom font file
+  // Path to your custom font fileg
   const fontPath = "Lexend-Medium.ttf";
 
   // Register the custom font
@@ -28,7 +28,7 @@ function generateAndSaveImage(text, backgroundColor, padding) {
 
   // Set text properties
   ctx.fillStyle = "white";
-  ctx.font = '12px "Edu NSW ACT Foundation"';
+  ctx.font = '12px "Lexend Medium"';
   ctx.textAlign = "left";
   ctx.textBaseline = "top";
 
